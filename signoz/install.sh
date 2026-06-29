@@ -34,7 +34,7 @@ if git -C "${SIGNOZ_DIR}" rev-parse 2>/dev/null; then
     echo "Git repo exists"
 else
     rm -rf "${SIGNOZ_DIR}"
-    git clone -b main https://github.com/SigNoz/signoz.git "${SIGNOZ_DIR}"
+    git clone -b v0.129.0 https://github.com/SigNoz/signoz.git "${SIGNOZ_DIR}"
 fi
 
 mkdir -p "${STATE_DIR}"
